@@ -1,0 +1,473 @@
+.header {
+    height: 46px;
+    background-color: #24292f;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__navbar {
+    position: relative;
+}
+
+.header__navbar-list li {
+    color: #ccc;
+    display: inline-block;
+    position: relative;
+    top: 100%;
+}
+
+.header__navbar-list>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.header__navbar-item {
+    display: block;
+    padding: 0 24px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__navbar-list li:hover .header__subnav {
+    display: block;
+}
+
+.header__subnav a {
+    color: #000;
+    min-width: 160px;
+    padding: 4px 16px;
+    line-height: 38px;
+    text-decoration: none;
+    display: block;
+}
+
+.header__subnav li:hover {
+    background-color: #ccc;
+}
+
+.navbar__search-btn {
+    position: absolute;
+    padding: 0 24px;
+    float: right;
+    font-size: 16px;
+    color: #ccc;
+    top: 0;
+    right: 0;
+    line-height: 46px;
+}
+
+.navbar__search-btn:hover {
+    color: #fff;
+    background-color: #f44336;
+}
+
+.slider {
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider__img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider__content {
+    position: relative;
+    bottom: 47px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.slider__heading {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.content {}
+
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 64px 16px;
+}
+
+.content__heading {
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.content__heading--sub {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #6d6d6d;
+}
+
+.content__heading--text {
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content__members {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.content__member-name {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content__member-img {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour__tickets {
+    background-color: #fff;
+}
+
+.tour__tickets-item {
+    font-size: 15px;
+    padding: 8px 16px;
+    color: #757575;
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-soldout {
+    color: #fff;
+    background-color: #f44336;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.tickets-quantity {
+    float: right;
+    margin-right: 16px;
+    padding: 2px 8px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.tour__location {
+    margin-top: 32px;
+}
+
+.tour__location-body {
+    background-color: #fff;
+    text-align: left;
+    padding: 0 16px;
+    font-size: 15px;
+    overflow: hidden;
+    min-height: 189px;
+}
+
+.tour__location-img {
+    width: 100%;
+    display: block;
+    height: 160px;
+}
+
+.tour__location-img:hover {
+    opacity: 0.6;
+}
+
+.tour__location-city {
+    margin: 15px 0;
+    font-weight: 550;
+}
+
+.tour__location-time {
+    margin: 15px 0;
+    color: #757575;
+}
+
+.tour__location-text {
+    margin: 15px 0;
+    line-height: 1.5;
+    min-height: 44px;
+}
+
+.tour__location-btn {
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.tour__location-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.contact__form-info {
+    text-align: left;
+    font-size: 16px;
+}
+
+.contact__form-info p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.5px;
+    font-size: 18px;
+}
+
+.contact__form-info i {
+    width: 30px;
+}
+
+.contact__form-personal {}
+
+.contact__form-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.contact__form-control {
+    width: 100%;
+    padding: 8px;
+}
+
+.contact__form-send {
+    float: right;
+    margin: 16px 0;
+    padding: 11px 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact__form-send:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.content__map-img {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.footer__socials {
+    font-size: 24px;
+    color: #757575;
+}
+
+.footer__socials i:hover {
+    opacity: 0.7;
+}
+
+.footer__text {
+    margin: 15px 0;
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer__text a {
+    color: #757575;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-close {
+    float: right;
+    padding: 16px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #009688;
+    outline: none;
+    border: none;
+    font-weight: 400;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+    height: 129px;
+    align-items: center;
+}
+
+.modal-heading {
+    font-size: 30px;
+    height: 45px;
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    padding: 0 16px;
+}
+
+.modal-label {
+    margin: 15px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.modal-label>i {
+    font-size: 14px;
+}
+
+.modal-input {
+    /* display: block; */
+    width: 100%;
+    padding: 8px;
+}
+
+.modal-paybtn {
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    background-color: #009688;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.modal-paybtn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-closebtn {
+    margin: 16px 0;
+    padding: 10px 16px;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    font-size: 15px;
+}
+
+.modal-closebtn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

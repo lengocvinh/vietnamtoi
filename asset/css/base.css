@@ -1,0 +1,52 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.clear {
+    clear: both!important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-full {
+    width: 100% !important;
+}
+
+.col-half {
+    width: 50% !important;
+}
+
+.col-third {
+    width: 33.33333% !important;
+}
